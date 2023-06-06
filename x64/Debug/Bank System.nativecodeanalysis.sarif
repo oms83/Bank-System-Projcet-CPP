@@ -1,0 +1,552 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsString.h"
+                },
+                "region": {
+                  "startLine": 372,
+                  "startColumn": 37,
+                  "endLine": 372,
+                  "endColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "clsString::TrimRight",
+                  "decoratedName": "?TrimRight@clsString@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V23@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'clsBankClients::stTransferRecord::sAccountBalance' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsBankClients.h"
+                },
+                "region": {
+                  "startLine": 196,
+                  "startColumn": 2,
+                  "endLine": 196,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "clsBankClients::stTransferRecord::{ctor}",
+                  "decoratedName": "??0stTransferRecord@clsBankClients@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "clsBankClients::stTransferRecord::sAccountBalance"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'clsBankClients::stTransferRecord::dAccountBalance' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsBankClients.h"
+                },
+                "region": {
+                  "startLine": 196,
+                  "startColumn": 2,
+                  "endLine": 196,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "clsBankClients::stTransferRecord::{ctor}",
+                  "decoratedName": "??0stTransferRecord@clsBankClients@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "clsBankClients::stTransferRecord::dAccountBalance"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'clsBankClients::stTransferRecord::Amount' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsBankClients.h"
+                },
+                "region": {
+                  "startLine": 196,
+                  "startColumn": 2,
+                  "endLine": 196,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "clsBankClients::stTransferRecord::{ctor}",
+                  "decoratedName": "??0stTransferRecord@clsBankClients@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "clsBankClients::stTransferRecord::Amount"
+          }
+        },
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Using uninitialized memory 'Number'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsInputValidate.h"
+                },
+                "region": {
+                  "startLine": 151,
+                  "startColumn": 27,
+                  "endLine": 151,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "clsInputValidate::ReadDblNumberBetween",
+                  "decoratedName": "?ReadDblNumberBetween@clsInputValidate@@SANNNV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsInputValidate.h"
+                          },
+                          "region": {
+                            "startLine": 149,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "'Number' is not initialized"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsInputValidate.h"
+                          },
+                          "region": {
+                            "startLine": 151,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "'Number' is an In/Out argument to 'clsInputValidate::IsNumberBetween' (declared on line 34)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsInputValidate.h"
+                          },
+                          "region": {
+                            "startLine": 155,
+                            "startColumn": 3
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsInputValidate.h"
+                          },
+                          "region": {
+                            "startLine": 151,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'Number' is used, but may not have been initialized"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'clsUsers::stLoginRegisterRecord::Permissions' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsUsers.h"
+                },
+                "region": {
+                  "startLine": 168,
+                  "startColumn": 2,
+                  "endLine": 168,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "clsUsers::stLoginRegisterRecord::{ctor}",
+                  "decoratedName": "??0stLoginRegisterRecord@clsUsers@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "clsUsers::stLoginRegisterRecord::Permissions"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsString.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "f2dd7811f54a9da3ce751d11bbe2833c0a905d96293895ff6820373afd3539e7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsBankClients.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "6a9cf37304ca2fbc586f7e3749df1acb346101fbc802c9dd7a78e3cba7d1f560"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsInputValidate.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "ba48e8df5b49e8630bd3a849fa593a8dd928b17ec850ed5e07f24d13d24bc651"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/PROGRAMING/C++ Language/Programming Advice/Bank System/clsUsers.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "80c910c837f132e58471bd52ed4cb04df8f5dd40823006345efb7c9f214f66bd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/bank system.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "2592d7ff826d7752c36d39766272ad099beabbb77a39ee4573bffc6f2ff516c7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsperson.h"
+          },
+          "hashes": {
+            "sha-256": "80872ca924ec8f3296fbac3a7092b050833e5b7e67a2fdc3726be8731fcb7e12"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clstime.h"
+          },
+          "hashes": {
+            "sha-256": "0e59e97cfd6ce2fcb16abc0de4371a582206f7717fe5c74e9258c85c8fc1e61c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsdate.h"
+          },
+          "hashes": {
+            "sha-256": "a0df0bd0a2e2986e6aa099e8d79a7568f72bca427492c89700b224baa403b0b8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsfindclientscreen.h"
+          },
+          "hashes": {
+            "sha-256": "7a49bacb1806ad8d8b14a1681c6cc69d7ffe7f5e1d1a48e7cf083e58802deb15"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsscreen.h"
+          },
+          "hashes": {
+            "sha-256": "dd7928bcebcdcdb2e41097337683134aa7b332cc700e9d5261f205b2a9360edb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsutil.h"
+          },
+          "hashes": {
+            "sha-256": "d3c396bb1ef133760674fdd23628f3bc82aa2813a13b3bdb5f4c858b8f4f2a8b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsglobal.h"
+          },
+          "hashes": {
+            "sha-256": "7a87e60af2cd70586dacf327401c85763936264a6d0dac183b558a5fa238f145"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsmainmenuescreen.h"
+          },
+          "hashes": {
+            "sha-256": "da8032327f6f0c722031549b371b9e248b2ab9bc9457111202fa8fafab030e5a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsupdateclientscreen.h"
+          },
+          "hashes": {
+            "sha-256": "f6f04c579fecb70b9037437d592cd34da32e18eb58203793d93664315fa4405e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsdeleteclientscreen.h"
+          },
+          "hashes": {
+            "sha-256": "cf005a75ed16a2d62e014c0a64f6bffa03fae530f7a716629ef14d0f345804ca"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsaddnewclientscreen.h"
+          },
+          "hashes": {
+            "sha-256": "025853e553cf286986e0b8c814175b6e54a0a75d19bb8718bcf0f450d406e706"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsclientslistscreen.h"
+          },
+          "hashes": {
+            "sha-256": "9a3fcc81f8764fe6a4271e66d730e787a0149f6ae989d0b3c1a99a6e8c38db96"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clstransectionscreen.h"
+          },
+          "hashes": {
+            "sha-256": "035e8d92a1396a8d4ad850f5289f8516d8817e261d19573487dcf2e115809ef2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsdepositscreen.h"
+          },
+          "hashes": {
+            "sha-256": "2ad6df97cbd3bac26d8e1e9a18d8dfb677f15d8c03a0120ed30c2ce38b1e34bc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clswithdrawscreen.h"
+          },
+          "hashes": {
+            "sha-256": "0d115dfbcf5def14ad34783b882880a08fc45aa1be03c2cd635ee6059fc671a2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clstotalbalancesscreen.h"
+          },
+          "hashes": {
+            "sha-256": "fa05352a4d7df1fa8464d775134c5d59eb59572485f06b215855f845fd9f5e71"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clstransferclientsscreen.h"
+          },
+          "hashes": {
+            "sha-256": "aafff17f9a1f18f7cf046ea424f34bef191ac276c2f9b1d244a48c6dfad5fbe4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clstransferloglistscreen.h"
+          },
+          "hashes": {
+            "sha-256": "8fa9335f80bdb307b915168c57ee6d82feae2caba82a5bad9d181a6bb1a241aa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsmanagerusersscreen.h"
+          },
+          "hashes": {
+            "sha-256": "7d41e1f79db1046fd97f694481d2c2297d15f7ddb8f73479dfda022d20e722c2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsuserslistscreen.h"
+          },
+          "hashes": {
+            "sha-256": "f7d34ec772e75886298e992d4ca5e3b43c962188c6067d94941f22672a0af9e5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsaddnewuserscreen.h"
+          },
+          "hashes": {
+            "sha-256": "461c28fac96b0782e9b2ba6a86c041514e319aaaf4a5d736e79a07c1750c3193"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsdeleteuserscreen.h"
+          },
+          "hashes": {
+            "sha-256": "036467bf9e38625534625279bc380ce1cd0652e6f91d2765435afc5ad4158b3e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsupdateuserscreen.h"
+          },
+          "hashes": {
+            "sha-256": "1e34784f055d62110f06f434c67241115db30097ff6ea06baa6fe9190c41531e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsfinduserscreen.h"
+          },
+          "hashes": {
+            "sha-256": "ea44c3d52d60fed5340bea4b9caa796b3f46a1e66f07ef88bcaf40c384ed5010"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsloginregisterscreen.h"
+          },
+          "hashes": {
+            "sha-256": "5adebf407fc97a57b79ee0305beab47ec292162755044c9158d26edb7b49b619"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/programing/c++ language/programming advice/bank system/clsshowloginscreen.h"
+          },
+          "hashes": {
+            "sha-256": "fa0044ba9c9917403e3acb914b0b049f9912f940c4af345739bb514bf5e1b4aa"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+#pragma once
+#include<iostream>
+#include"clsScreen.h"
+#include"clsBankClients.h"
+#include"clsInputValidate.h"
+
+class clsUpdateClientScreen : protected clsScreen
+{
+private:
+	static void _PrintClientRecord(clsBankClients Client)
+	{
+		cout << "\n__________________________________________________\n";
+		cout << setw(20) << "" << "Clinet Card";
+		cout << "\n__________________________________________________\n";
+		cout << "\nFirst Name        : " << Client.FirstName;
+		cout << "\nLast Name         : " << Client.LastName;
+		cout << "\nFull Name         : " << Client.FullName();
+		cout << "\nAccount Number    : " << Client.GetAccountNumber();
+		cout << "\nAccount Balance   : " << Client.AccountBalance;
+		cout << "\nPinCode           : " << Client.PinCode;
+		cout << "\nEmail             : " << Client.Email;
+		cout << "\nPhone             : " << Client.Phone;
+		cout << "\n__________________________________________________\n\n";
+	}
+
+	static void _GetClientInfo(clsBankClients& Client)
+	{
+		cout << "\nEnter First Name     :  ";
+		Client.FirstName = clsInputValidate<string>::ReadString();
+
+		cout << "\nEnter Last Name      :  ";
+		Client.LastName = clsInputValidate<string>::ReadString();
+
+		cout << "\nEnter Email          :  ";
+		Client.Email = clsInputValidate<string>::ReadString();
+
+		cout << "\nEnter Phone          :  ";
+		Client.Phone = clsInputValidate<string>::ReadString();
+
+		cout << "\nEnter PinCode        :  ";
+		Client.PinCode = clsInputValidate<string>::ReadString();
+
+		cout << "\nAcc. Balance Name    :  ";
+		Client.AccountBalance = clsInputValidate<float>::ReadPositiveNumber();
+
+	}
+
+
+
+public:
+
+	static void UpdateClient()
+	{
+		if (!CheckAccessRights(clsUsers::enPermissions::pUpdateClient))
+		{
+			return;
+		}
+
+		_DrawScreenHeader("Update Client Screen");
+
+		cout << "\nPlease Enter AccountNumber: ";
+		string AccountNumber = clsInputValidate<string>::ReadString();
+
+		while (!clsBankClients::IsExistClient(AccountNumber))
+		{
+			cout << "\nPlease Enter Another Account Number, Becuase (" << AccountNumber << ") Is Not Found: ";
+			AccountNumber = clsInputValidate<string>::ReadString();
+		}
+
+		clsBankClients Client = clsBankClients::Find(AccountNumber);
+		_PrintClientRecord(Client);
+
+		_GetClientInfo(Client);
+
+
+		char Answer = 'Y';
+
+		cout << "\nAre you sure you want to update this client [Y/N] ? ";
+		cin >> Answer;
+
+		if (toupper(Answer) == 'Y')
+		{
+			Client.Save();
+
+			_PrintClientRecord(Client);
+
+			cout << "\nClient Updated Successfully!\n";
+		}
+		else
+		{
+			cout << "\nClient Update is cancelld!\n";
+		}
+
+	}
+
+
+};
+

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>D:\PROGRAMING\C++ Language\Programming Advice\Bank System\</FILEPATH>
+      <FILENAME>clsString.h</FILENAME>
+      <LINE>372</LINE>
+      <COLUMN>38</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>clsString::TrimRight</FUNCTION>
+    <DECORATED>?TrimRight@clsString@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V23@@Z</DECORATED>
+    <FUNCLINE>364</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\PROGRAMING\C++ Language\Programming Advice\Bank System\</FILEPATH>
+      <FILENAME>clsBankClients.h</FILENAME>
+      <LINE>196</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'clsBankClients::stTransferRecord::sAccountBalance' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>clsBankClients::stTransferRecord::{ctor}</FUNCTION>
+    <DECORATED>??0stTransferRecord@clsBankClients@@QEAA@XZ</DECORATED>
+    <FUNCLINE>196</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>clsBankClients::stTransferRecord::sAccountBalance</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\PROGRAMING\C++ Language\Programming Advice\Bank System\</FILEPATH>
+      <FILENAME>clsInputValidate.h</FILENAME>
+      <LINE>151</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Using uninitialized memory 'Number'.</DESCRIPTION>
+    <FUNCTION>clsInputValidate::ReadDblNumberBetween</FUNCTION>
+    <DECORATED>?ReadDblNumberBetween@clsInputValidate@@SANNNV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>147</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>D:\PROGRAMING\C++ Language\Programming Advice\Bank System\</FILEPATH>
+        <FILENAME>clsInputValidate.h</FILENAME>
+        <LINE>149</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'Number' is not initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\PROGRAMING\C++ Language\Programming Advice\Bank System\</FILEPATH>
+        <FILENAME>clsInputValidate.h</FILENAME>
+        <LINE>151</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'Number' is an In/Out argument to 'clsInputValidate::IsNumberBetween' (declared on line 34)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\PROGRAMING\C++ Language\Programming Advice\Bank System\</FILEPATH>
+        <FILENAME>clsInputValidate.h</FILENAME>
+        <LINE>155</LINE>
+        <COLUMN>2</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>D:\PROGRAMING\C++ Language\Programming Advice\Bank System\</FILEPATH>
+        <FILENAME>clsInputValidate.h</FILENAME>
+        <LINE>151</LINE>
+        <COLUMN>26</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'Number' is used, but may not have been initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>D:\PROGRAMING\C++ Language\Programming Advice\Bank System\</FILEPATH>
+      <FILENAME>clsUsers.h</FILENAME>
+      <LINE>168</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'clsUsers::stLoginRegisterRecord::Permissions' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>clsUsers::stLoginRegisterRecord::{ctor}</FUNCTION>
+    <DECORATED>??0stLoginRegisterRecord@clsUsers@@QEAA@XZ</DECORATED>
+    <FUNCLINE>168</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>clsUsers::stLoginRegisterRecord::Permissions</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

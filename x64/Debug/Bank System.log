@@ -1,0 +1,36 @@
+﻿  Bank System.cpp
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsString.h(39,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsString.h(44,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsString.h(55,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsString.h(189,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsString.h(320,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsString.h(368,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsUtil.h(65,5): warning C4102: 'defualt': unreferenced label
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsTime.h(23,23): warning C4101: 'Second': unreferenced local variable
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsTime.h(23,9): warning C4101: 'Hour': unreferenced local variable
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsTime.h(23,15): warning C4101: 'Minute': unreferenced local variable
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsUsers.h(162,2): warning C4240: nonstandard extension used: access to 'clsUsers::stLoginRegisterRecord' now defined to be 'public', previously it was defined to be 'private'
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsUsers.h(129,9): message : see declaration of 'clsUsers::stLoginRegisterRecord'
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsScreen.h(16,16): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsScreen.h(26,16): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsScreen.h(30,16): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsScreen.h(38,17): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsScreen.h(40,17): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsBankClients.h(188,2): warning C4240: nonstandard extension used: access to 'clsBankClients::stTransferRecord' now defined to be 'public', previously it was defined to be 'private'
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsBankClients.h(130,9): message : see declaration of 'clsBankClients::stTransferRecord'
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsBankClients.h(139,33): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsBankClients.h(140,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsBankClients.h(141,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsTotalBalancesScreen.h(64,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsTransferClientsScreen.h(48,66): warning C4244: '=': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=double
+          ]
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsBankClients.h(321): warning C4715: 'clsBankClients::Save': not all control paths return a value
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsInputValidate.h(234): warning C4717: 'clsInputValidate<float>::ReadPositiveNumber': recursive on all control paths, function will cause runtime stack overflow
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsUsers.h(307): warning C4715: 'clsUsers::Save': not all control paths return a value
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsUtil.h(264): warning C4715: 'clsUtil::TextNumber': not all control paths return a value
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsInputValidate.h(234): warning C4717: 'clsInputValidate<short>::ReadPositiveNumber': recursive on all control paths, function will cause runtime stack overflow
+D:\PROGRAMING\C++ Language\Programming Advice\Bank System\clsInputValidate.h(234): warning C4717: 'clsInputValidate<double>::ReadPositiveNumber': recursive on all control paths, function will cause runtime stack overflow
+  Bank System.vcxproj -> D:\PROGRAMING\C++ Language\Programming Advice\Bank System\x64\Debug\Bank System.exe
